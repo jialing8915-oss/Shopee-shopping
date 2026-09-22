@@ -11,6 +11,7 @@ int main() {
     double price;
     int delivery_method;
     double delivery_fee;
+    double final_price;
     string product;
     string categoryname;
 
@@ -217,6 +218,36 @@ break;
 default:        
 cout<<"\nInvalid delivery:"<< endl;        
 return 0;      
+}
+final_price = subtotal - discount + delivery_fee;
+
+    cout <<"================================================="<< endl;
+    cout <<"            shopee shopping result               "<< endl;
+    cout <<"================================================="<< endl;
+
+    cout <<"category:"<<categoryname<< endl;
+    cout <<"product:"<<product<< endl;
+    cout <<"price:"<<price<< endl; 
+    cout <<"quantity:"<<quantity<< endl;
+    cout <<"subtotal:"<<subtotal<< endl;
+    cout <<"voucher:"<<discount<< endl;
+    cout <<"delivery_fee:"<<delivery_fee<< endl;
+    cout <<"final_price:"<<final_price<< endl;
+    cout <<"your budget:"<<budget<< endl;
+
+    if (final_price<=budget){
+        cout <<"\nStatus :within your budget!"<< endl;
+        cout <<"you saved:RM"<<discount<< endl;
+    }
+    else {
+        cout <<"\nStatus :over your budget"<< endl;
+    }
+
+    cout <<"================================================="<< endl;
+    cout <<"  Thank you for using shopee shopping asistant!  "<< endl;
+    cout <<"================================================="<< endl;
+
+    return 0;
 }
         }
     }
