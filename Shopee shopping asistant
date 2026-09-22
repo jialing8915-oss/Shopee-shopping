@@ -9,7 +9,8 @@ int main() {
     double subtotal;
     double discount;
     double price;
-    double delivery fee;
+    int delivery_method;
+    double delivery_fee;
     string product;
     string categoryname;
 
@@ -198,20 +199,20 @@ cout<<"2 doorstep delivery fee"<< endl;
 cout<<"3 self delivary fee"<< endl;    
 cout<<"4 instant delivary fee"<< endl;
 cout<<"\nEnter your choice:";    
-int delivery choice=0;    
-cin >> delivery fee;
-switch(delivery fee){        
+int delivery_choice=0;    
+cin >> delivery_fee;
+switch(delivery_fee){        
 case 1:          
-delivery fee = 5.19;        
+delivery_fee = 5.19;        
 break;        
 case 2:          
-delivery fee = 6.39;        
+delivery_fee = 6.39;        
 break;        
 case 3:          
-delivery fee = 0;        
+delivery_fee = 0;        
 break;        
 case 4:          
-delivery fee = 20;        
+delivery_fee = 20;        
 break;
 default:        
 cout<<"\nInvalid delivery:"<< endl;        
