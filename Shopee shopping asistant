@@ -1,0 +1,63 @@
+#include <iostream>
+using namespace std;
+
+int main() {
+    int category;
+    int vaucher;
+    double budget;
+    double price;
+    string product;
+    string categoryname;
+
+    cout <<"shopee shopping asistant:"<< endl;
+
+    cout <<"\nselect your category:” << endl;
+    cout <<"1 shirt"<< endl; 
+    cout <<"2 shoe"<< endl;
+    cout <<"3 food"<< endl;
+    cout <<"4 electronic"<< endl;
+    cout <<"5 leisure"<< endl;
+    cout <<"6 furnite"<< endl;
+
+    cout <<"\nenter your choice:";
+    cin >> category;
+
+    cout <<"\nenter your budget:";
+    cin >> budget;
+
+    switch(category){
+        case 1:
+            categoryname = "shirt";
+        if (budget>=150){
+            product = "normey humaira set";
+            price = 137.80;
+        }
+        else if (budget>=100){
+            product = "horse face skirt complete set";
+            price = 79.90;
+        }
+        else if (budget>=50){
+            product = "baju kurung";
+            price = 41.89;
+        }
+        else {
+            product = "hoodie";
+            price = 28.73;
+        }
+        break;
+        case 2:
+           categoryname = "shoe";
+        if (budget>=150){
+            product = "spot shoe";
+            price = 149.9;
+        }
+        else if (budget>=100){
+            product = "high-heeled shoes";
+            price = 89.9;
+        }
+        else if (budget>=50){
+            product = "flat shoe";
+        }
+    }
+    return 0;
+}
