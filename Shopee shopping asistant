@@ -57,6 +57,95 @@ int main() {
         }
         else if (budget>=50){
             product = "flat shoe";
+            price = 46.85;
+        }
+        else {
+            product = "slipper";
+            price = 16.50;
+        }
+        break;
+        case 3:
+          categoryname = "food";
+        if (budget>=150){
+            product = "fresh ingredients";
+            price = 148;
+        }
+        else if (budget>=100){
+            product = "grains, Oils, and Instant Mixes";
+            price = 92.5;
+        }
+        else if (budget>=50){
+            product = "ready-to-eat instant food";
+            price = 34.34;
+        }
+        else {
+            product = "casual snacks";
+            price = 26.9;
+        }
+        break;
+        case 4:
+          categoryname = "electronic";
+        if (budget>=150){
+            product = "personal care appliances";
+            price = 131.58;
+        }
+        else if (budget>=100){
+            product = "small kitchen appliances";
+            price = 86.9;
+        }
+        else if (budget>=50){
+            product = "environmental and lifestyle appliances";
+            price = 38.8;
+        }
+        else {
+            product = "digital lifestyle appliances";
+            price = 29.8;
+        }
+        break;
+        case 5:
+          categoryname = "leisure";
+        if (budget>=150){
+            product = "diy crafting";
+            price = 139.4;
+        }
+        else if (budget>=100){
+            product = "spot equipment";
+            price = 79.4;
+        }
+        else if (budget>=50){
+            product = "glamping";
+            price = 48.9;
+        }
+        else {
+            product = "picnic";
+            price = 15;
+        }
+        break;
+        case 6:
+          categoryname = "furniture";
+        if (budget>=150){
+            product = "solid wood";
+            price = 126;
+        }
+        else if (budget>=100){
+            product = "wood Veneer";
+            price = 96.4;
+        }
+        else if (budget>=50){
+            product = " particle board";
+            price = 47.5;
+        }
+        else {
+            product = "plastic";
+            price = 20.6;
+        }
+        break;
+
+        default:
+        cout<<"\nInvaid category:"<< endl;
+        return 0;  
+    }
+
         }
     }
     return 0;
