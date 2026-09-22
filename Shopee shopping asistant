@@ -3,7 +3,7 @@ using namespace std;
 
 int main() {
     int category;
-    int vaucher;
+    int voucher;
     double budget;
     int quantity;
     double subtotal;
@@ -15,15 +15,17 @@ int main() {
     string product;
     string categoryname;
 
-    cout <<"shopee shopping asistant:"<< endl;
+    cout <<"================================================="<< endl;
+    cout <<"            shopee shopping asistant             "<< endl;
+    cout <<"================================================="<< endl;
 
-    cout <<"\nselect your category:” << endl;
+    cout <<"\nselect your category:"<< endl;
     cout <<"1 shirt"<< endl; 
     cout <<"2 shoe"<< endl;
     cout <<"3 food"<< endl;
     cout <<"4 electronic"<< endl;
     cout <<"5 leisure"<< endl;
-    cout <<"6 furnite"<< endl;
+    cout <<"6 furniture"<< endl;
 
     cout <<"\nenter your choice:";
     cin >> category;
@@ -151,6 +153,7 @@ int main() {
         cout<<"\nInvaid category:"<< endl;
         return 0;  
     }
+
     cout<<"\nenter quantity:";
     cin >> quantity;
 
@@ -194,32 +197,37 @@ int main() {
         cout<<"\ninvaid voucher choice. No discount applied:"<< endl;
         int discount = 0;
     }
-cout<<"\nSelect delivery method:"<< endl;    
-cout<<"1 standard delivery fee"<< endl;    
-cout<<"2 doorstep delivery fee"<< endl;    
-cout<<"3 self delivary fee"<< endl;    
-cout<<"4 instant delivary fee"<< endl;
-cout<<"\nEnter your choice:";    
-int delivery_choice=0;    
-cin >> delivery_choice;
-switch(delivery_choice){        
-case 1:          
-delivery_fee = 5.19;        
-break;        
-case 2:          
-delivery_fee = 6.39;        
-break;        
-case 3:          
-delivery_fee = 0;        
-break;        
-case 4:          
-delivery_fee = 20;        
-break;
-default:        
-cout<<"\nInvalid delivery:"<< endl;        
-return 0;      
-}
-final_price = subtotal - discount + delivery_fee;
+
+    cout<<"\nSelect delivery method:"<< endl;
+    cout<<"1 standard delivery fee"<< endl;
+    cout<<"2 doorstep delivery fee"<< endl;
+    cout<<"3 self delivary fee"<< endl;
+    cout<<"4 instant delivary fee"<< endl;
+
+    cout<<"\nEnter your choice:";
+    int delivery_choice=0;
+    cin >> delivery_choice;
+
+    switch(delivery_choice){
+        case 1:
+          delivery_fee = 5.19;
+        break;
+        case 2:
+          delivery_fee = 6.39;
+        break;
+        case 3:
+          delivery_fee = 0;
+        break;
+        case 4:
+          delivery_fee = 20;
+        break;
+
+        default:
+        cout<<"\nInvalid delivery:"<< endl;
+        return 0;  
+    }
+
+    final_price = subtotal - discount + delivery_fee;
 
     cout <<"================================================="<< endl;
     cout <<"            shopee shopping result               "<< endl;
@@ -247,9 +255,5 @@ final_price = subtotal - discount + delivery_fee;
     cout <<"  Thank you for using shopee shopping asistant!  "<< endl;
     cout <<"================================================="<< endl;
 
-    return 0;
-}
-        }
-    }
     return 0;
 }
