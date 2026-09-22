@@ -5,6 +5,9 @@ int main() {
     int category;
     int vaucher;
     double budget;
+    int quantity;
+    double subtotal;
+    double discount;
     double price;
     string product;
     string categoryname;
@@ -145,7 +148,49 @@ int main() {
         cout<<"\nInvaid category:"<< endl;
         return 0;  
     }
+    cout<<"\nenter quantity:";
+    cin >> quantity;
 
+    if (quantity<=0){
+        cout<<"\nInvaid quantity:"<< endl;
+        return 0;
+    }
+
+    subtotal = price * quantity;
+
+    if (subtotal>budget){
+        cout<<"sorry,there has no suitable product for your budget:"<< endl;
+        return 0;
+    }
+
+    cout<<"do you have shopee voucher:"<< endl;
+    cout<<"1 yes"<< endl;
+    cout<<"2 no"<< endl;
+
+    cout<<"enter your choice:";
+    cin >> voucher;
+
+    if (voucher==1){
+        if (subtotal>=150){
+        discount = 40;
+        }
+        else if (subtotal>=100){
+        discount = 20;
+        }
+        else if (subtotal>=50){
+        discount = 10;
+        }
+        else {
+        discount = 5;
+        }
+    }
+    else if (voucher==2){
+         discount = 0;
+    }
+    else {
+        cout<<"\ninvaid voucher choice. No discount applied:"<< endl;
+        int discount = 0;
+    }
         }
     }
     return 0;
