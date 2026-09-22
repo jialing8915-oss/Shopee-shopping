@@ -9,6 +9,7 @@ int main() {
     double subtotal;
     double discount;
     double price;
+    double delivery fee;
     string product;
     string categoryname;
 
@@ -191,7 +192,31 @@ int main() {
         cout<<"\ninvaid voucher choice. No discount applied:"<< endl;
         int discount = 0;
     }
-
+cout<<"\nSelect delivery method:"<< endl;    
+cout<<"1 standard delivery fee"<< endl;    
+cout<<"2 doorstep delivery fee"<< endl;    
+cout<<"3 self delivary fee"<< endl;    
+cout<<"4 instant delivary fee"<< endl;
+cout<<"\nEnter your choice:";    
+int delivery choice=0;    
+cin >> delivery fee;
+switch(delivery fee){        
+case 1:          
+delivery fee = 5.19;        
+break;        
+case 2:          
+delivery fee = 6.39;        
+break;        
+case 3:          
+delivery fee = 0;        
+break;        
+case 4:          
+delivery fee = 20;        
+break;
+default:        
+cout<<"\nInvalid delivery:"<< endl;        
+return 0;      
+}
         }
     }
     return 0;
