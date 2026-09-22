@@ -200,8 +200,8 @@ cout<<"3 self delivary fee"<< endl;
 cout<<"4 instant delivary fee"<< endl;
 cout<<"\nEnter your choice:";    
 int delivery_choice=0;    
-cin >> delivery_fee;
-switch(delivery_fee){        
+cin >> delivery_choice;
+switch(delivery_choice){        
 case 1:          
 delivery_fee = 5.19;        
 break;        
