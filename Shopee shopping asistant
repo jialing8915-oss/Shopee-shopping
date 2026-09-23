@@ -172,8 +172,16 @@ int main() {
         cout<<"your budget:RM"<<budget<< endl;
         cout<<"\nplease select your category and budget again"<< endl;
         cout<<"==============================================="<< endl;
+        
+        validbudget=false;
+        }
+        else{
+        validbudget=true;
+        }
         return 0;
     }
+
+    while(!validbudget);
 
     cout<<"do you have shopee voucher:"<< endl;
     cout<<"1 yes"<< endl;
