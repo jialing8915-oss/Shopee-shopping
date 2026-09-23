@@ -3,6 +3,8 @@
 using namespace std;
 
 int main() {
+    
+    while(true){
     int category;
     int voucher;
     double budget;
@@ -152,7 +154,7 @@ int main() {
 
         default:
         cout<<"\nInvaid category:"<< endl;
-        return 0;  
+        continue;  
     }
 
     cout<<"\nenter quantity:";
@@ -160,12 +162,12 @@ int main() {
 
     if (quantity<=0){
         cout<<"\nInvaid quantity:"<< endl;
-        return 0;
+        continue;
     }
 
-    subtotal = price * quantity;
-
     bool validbudget=false;
+
+    subtotal = price * quantity;
 
     if (subtotal>budget){
         cout<<"\nsorry,total price already exceed your budget:"<< endl;
@@ -176,15 +178,8 @@ int main() {
         cout<<"\nplease select your category and budget again"<< endl;
         cout<<"==============================================="<< endl;
         
-        validbudget=false;
-        }
-        else{
-        validbudget=true;
-        }
-        return 0;
+        continue;
     }
-
-    while(!validbudget);
 
     cout<<"do you have shopee voucher:"<< endl;
     cout<<"1 yes"<< endl;
@@ -273,4 +268,5 @@ int main() {
     cout <<"================================================="<< endl;
 
     return 0;
+    }
 }
