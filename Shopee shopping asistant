@@ -166,7 +166,12 @@ int main() {
 
     if (subtotal>budget){
         cout<<"\nsorry,total price already exceed your budget:"<< endl;
+        cout<<"price: RM"<<price<< endl;
+        cout<<"quantity:"<<quantity<< endl;
+        cout<<"subtotal:RM"<<subtotal<< endl;
+        cout<<"your budget:RM"<<budget<< endl;
         cout<<"\nplease select your category and budget again"<< endl;
+        cout<<"==============================================="<< endl;
         return 0;
     }
 
@@ -236,13 +241,13 @@ int main() {
 
     cout <<"category:"<<categoryname<< endl;
     cout <<"product:"<<product<< endl;
-    cout <<"price:"<<price<< endl; 
+    cout <<"price:RM"<<price<< endl; 
     cout <<"quantity:"<<quantity<< endl;
-    cout <<"subtotal:"<<subtotal<< endl;
+    cout <<"subtotal:RM"<<subtotal<< endl;
     cout <<"voucher:"<<discount<< endl;
-    cout <<"delivery_fee:"<<delivery_fee<< endl;
-    cout <<"final_price:"<<final_price<< endl;
-    cout <<"your budget:"<<budget<< endl;
+    cout <<"delivery_fee:RM"<<delivery_fee<< endl;
+    cout <<"final_price:RM"<<final_price<< endl;
+    cout <<"your budget:RM"<<budget<< endl;
 
     if (final_price<=budget){
         cout <<"\nStatus :within your budget!"<< endl;
