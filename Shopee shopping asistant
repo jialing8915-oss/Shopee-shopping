@@ -165,7 +165,8 @@ int main() {
     subtotal = price * quantity;
 
     if (subtotal>budget){
-        cout<<"sorry,there has no suitable product for your budget:"<< endl;
+        cout<<"\nsorry,total price already exceed your budget:"<< endl;
+        cout<<"\nplease select your category and budget again"<< endl;
         return 0;
     }
 
